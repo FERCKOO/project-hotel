@@ -1,0 +1,176 @@
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background: #eee;
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-height: 100vh;
+}
+
+#app {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: black;
+}
+
+label {
+    text-align: start;
+    margin: 5px;
+
+}
+
+/* Botones */
+.btn {
+    padding-inline: 0.6em;
+    margin-inline: 5em;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    border: 1px solid transparent;
+    color: white;
+    border: none;
+    background-color: #FF971D;
+}
+
+/* Boton pantalla principal */
+.principal .btn {
+    padding: .6em;
+    padding-inline: 1em;
+    margin-inline: 1em;
+}
+
+.btn:hover {
+    background-color: #FFC107;
+}
+
+/* Login */
+.login {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.principal {
+    padding: 0;
+    margin-top: 65px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid black;
+}
+
+.form {
+    display: flex;
+}
+
+/* Formatos */
+.login .form {
+    flex-direction: column;
+
+    margin-bottom: 150px;
+    border: 1px solid black;
+}
+
+.principal .form {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.principal .form .input
+/* .principal .form .input-number */
+{
+    margin: 0;
+}
+
+.form .input
+/* .form .input-number  */
+{
+    border: 1px solid gray;
+    padding: 10px;
+    margin-bottom: 15px;
+
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+/* .form .input-number {
+    width: 30px;
+} */
+
+/* Barra superior */
+.nav {
+    width: 100%;
+    margin-top: 0;
+
+    position: fixed;
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 65px;
+    background-color: #FF971D;
+
+    align-content: center;
+    justify-content: center;
+}
+
+.nav p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 5px 0;
+}
+
+/* Habitacion */
+
+.room-card {
+    background-color: white;
+    width: 230px;
+    height: 280px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    margin-inline: 25px;
+    border-radius: 25px;
+}
+
+.room-card .image {
+    border: 1px solid black;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100%;
+    height: 60%;
+    background-repeat: no-repeat;
+    /* background-image: url("/public/images/OP.jpg"); */
+}
+
+.room-card:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.rooms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+
+    margin-top: 20px;
+}
